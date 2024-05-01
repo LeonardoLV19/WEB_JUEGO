@@ -9,7 +9,7 @@ $(document).ready(function() {
         // Enviar los datos al servidor
         $.ajax({
             type: 'POST',
-            url: 'http://leop200.pythonanywhere.com/login',
+            url: 'https://leop200.pythonanywhere.com/login',
             contentType: 'application/json',
             data: JSON.stringify(formData),
             success: function(response) {
