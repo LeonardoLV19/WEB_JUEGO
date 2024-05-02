@@ -14,21 +14,19 @@ $(document).ready(function() {
         var promedioChart = new Chart(document.getElementById('promedioChart'), {
             type: 'bar',
             data: {
-                labels: ['Nivel 1', 'Nivel 2', 'Nivel 3', 'Total'],
+                labels: ['Nivel 1', 'Nivel 2', 'Nivel 3',],
                 datasets: [{
                     label: 'Promedio de Puntajes',
-                    data: [promedioNivel1, promedioNivel2, promedioNivel3, promedioTotal],
+                    data: [promedioNivel1, promedioNivel2, promedioNivel3],
                     backgroundColor: [
                         '#3a557c',
                         '#6a6a6a',
                         '#8fc027',
-                        '#3a557c'
                     ],
                     borderColor: [
                         '#3a557c',
                         '#6a6a6a',
                         '#8fc027',
-                        '#3a557c'
                     ],
                     borderWidth: 1
                 }]
@@ -63,12 +61,6 @@ $(document).ready(function() {
                     label: 'Nivel 3',
                     data: nivel3,
                     borderColor: '#8fc027',
-                    borderWidth: 1
-                },
-                {
-                    label: 'Total',
-                    data: total,
-                    borderColor: '#3a557c',
                     borderWidth: 1
                 }]
             },
